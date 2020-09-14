@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ ENCABEZADO ------*/
+.contenedor{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/banner_1.jpg);
+    /*background-color: beige;**/
+    
+    
+}
+
+.logo img{
+    width: 123px;
+    border-radius: 62px;
+}
+
+
+.ancestral p{
+    font-family: 'Segoe print';
+    font-size: 45px;
+    text-align: center;
+    color: rgb(170,228,136);
+    text-shadow: -1px 1px 3px black;
+}
+
+@media all and (max-width:420px){
+    .contenedor{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .logo img{
+        width: 33%;
+        margin-left: 34%;
+    }
+    
+    .ancestral p{
+        font-size: 200%;
+    }
+}
+
+/* ------ MENU ------*/
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.inicio {
+    width: 25%;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    background-color: rgba(208,111,120,0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.inicio:hover {
+    background-color: rgba(208,111,120,0.8);
+}
+
+.inicio img {
+    width: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.inicio p {
+    margin: 0 auto;
+}
+
+.carrito {
+    width: 25%;
+    width: 80;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column; 
+    background-color: rgba(105,146,148,0.5); 
+    transition: all 0.3s ease-in-out;
+}
+
+.carrito:hover {
+    background-color: rgba(105,146,148,0.8);
+}
+
+.carrito img {
+    width: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.carrito p {
+    margin: 0 auto;
+}
+
+.reservas {
+    width: 25%;
+    width: 80;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column; 
+    background-color: rgba(104,156,108,0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.reservas:hover {
+    background-color: rgba(104,156,108,0.8);
+}
+
+.reservas img {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.reservas p {
+    margin: 0 auto;
+}
+
+.contactos {
+    width: 25%;
+    width: 80;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column; 
+    background-color: rgba(159,176,80,0.5);  
+    transition: all 0.3s ease-in-out; 
+}
+
+.contactos:hover {
+    background-color: rgba(159,176,80,0.8);
+}
+
+.contactos img {
+    width: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.contactos p {
+    margin: 0 auto;
+}
+
+@media all and (max-width:380px){
+    .boton p{
+        font-size: 90%;
+    }
+    
+    .boton{
+        font-size: 90%;
+    }
+}
+
+
+/* ------ Recomendacion del cheff ------*/
+
+.banner {
+    background: rgba(10,222,87,1);
+    background: -moz-linear-gradient(-45deg, rgba(10,222,87,1) 0%, rgba(64,204,94,1) 22%, rgba(255,141,121,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,222,87,1)), color-stop(22%, rgba(64,204,94,1)), color-stop(100%, rgba(255,141,121,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10,222,87,1) 0%, rgba(64,204,94,1) 22%, rgba(255,141,121,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10,222,87,1) 0%, rgba(64,204,94,1) 22%, rgba(255,141,121,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10,222,87,1) 0%, rgba(64,204,94,1) 22%, rgba(255,141,121,1) 100%);
+    background: linear-gradient(135deg, rgba(10,222,87,1) 0%, rgba(64,204,94,1) 22%, rgba(255,141,121,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ade57', endColorstr='#ff8d79', GradientType=1 ); 
+    
+    font-family: 'Segoe print';
+    font-size: 35px;
+    text-align: center;
+    color: rgb(170,228,136);
+    text-shadow: -1px 1px 3px black;
+    align-content: center;
+}
+
+.fotomenu {
+    width: 50%;
+    
+    background-image: url(../img/carnebbq.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.listamenu {
+    width: 50%;
+    padding: 25px;
+}
+
+.listamenu h2{
+    font-size: 180%;
+}
+
+.listamenu ul {
+    margin-left: 25px;
+}
+
+@media all and (max-width:720px){
+
+    .fotomenu {
+        width: 100%;
+        height: 300px;
+    }
+    .listamenu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .listamenu h2 {
+        width: 50%;
+        margin-top: 4x0px;
+        text-align: left;
+    }
+    
+    .listamenu ul {
+        width: 50%;
+        margin-left: 60px;
+    }
+}
+
+@media all and (max-width:520px){
+
+    .fotomenu {
+        width: 100%;
+        height: 250px;
+    }
+    
+}
+
+/* ------ CARTA ------*/
+
+.carta {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/banner_1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    transition: all 2s ease-in-out;
+}
+
+.block {
+    width: 40%;
+    height: 25%;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-family: 'Segoe print';
+    border-style: solid;    
+    border-color: black;
+    transition: all 0.5s ease-in-out;
+    text-shadow: -1px 1px 3px black;
+}
+
+.block:hover {
+    background-color: black;
+    color: rgb(170,228,136);
+}
+
+.c1 {
+    background: rgba(255,141,121,0.45);
+    background: -moz-linear-gradient(-45deg, rgba(255,141,121,0.45) 0%, rgba(64,204,94,0.2) 75%, rgba(64,204,94,0.45) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,141,121,0.45)), color-stop(75%, rgba(64,204,94,0.45)), color-stop(100%, rgba(64,204,94,0.45)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,141,121,0.45) 0%, rgba(64,204,94,0.45) 75%, rgba(64,204,94,0.45) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,141,121,0.45) 0%, rgba(64,204,94,0.45) 75%, rgba(64,204,94,0.45) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,141,121,0.45) 0%, rgba(64,204,94,0.45) 75%, rgba(64,204,94,0.45) 100%);
+    background: linear-gradient(135deg, rgba(255,141,121,0.45) 0%, rgba(64,204,94,0.45) 75%, rgba(64,204,94,0.45) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8d79', endColorstr='#40cc5e', GradientType=1 );
+    border-width: 5px 2.5px 0px 5px;
+}
+
+.c2 {
+    background: rgba(64,204,94,0.45);
+    background: -moz-linear-gradient(-45deg, rgba(64,204,94,0.45) 25%, rgba(255,141,121,0.45) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(25%, rgba(64,204,94,0.45)), color-stop(100%, rgba(255,141,121,0.45)));
+    background: -webkit-linear-gradient(-45deg, rgba(64,204,94,0.45) 25%, rgba(255,141,121,0.45) 100%);
+    background: -o-linear-gradient(-45deg, rgba(64,204,94,0.45) 25%, rgba(255,141,121,0.45) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(64,204,94,0.45) 25%, rgba(255,141,121,0.45) 100%);
+    background: linear-gradient(135deg, rgba(64,204,94,0.45) 25%, rgba(255,141,121,0.45) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40cc5e', endColorstr='#ff8d79', GradientType=1 );
+    border-width: 5px 5px 0px 2.5px;
+}
+
+@media all and (max-width:1020px){
+    
+    .carta {
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .block {
+        margin: auto;
+        width: 80%;
+        border-width: 5px 5px 0px 5px;
+        font-size: 35px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ------ CARTA  DEL MENU------*/
+
+.cartamenu {
+    background-image: url(../img/banner_1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Segoe print';
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(170,228,136);
+}
+
+.plato {
+    width: 1000;
+    min-height: 500px;
+    text-align: justify;
+    font-size: 80%;
+    text-shadow: -1px 1px 3px black;
+}
+
+.plato img {
+    margin: 50px;
+    min-width: 300px;
+    max-width: 400px;
+    /*width: 500px;*/
+    width: 80%;
+}
+
+@media all and (max-width:600px){
+    .plato {
+        text-align: center;
+        
+    }
+}
+
+/* ------ EN CONSTRUCCIÓN------*/
+
+.construc {
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    font-family: 'Segoe print';
+    text-align: justify;
+    font-size: 80%;
+    text-shadow: -1px 1px 3px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.construc p {
+    margin-right: 120px;
+}
+
+.contalogo {
+    width: 240px;
+    height: 240px;
+    margin-right: 40px;
+    margin-left: 2%;
+}
